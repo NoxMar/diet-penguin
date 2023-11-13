@@ -10,6 +10,10 @@ Do wizualizacji projektowanego systemu używane będą diagramy [modelu C4](http
 ![Diagram kontekstu wygenerowany na podstawie modelu structurizr](/docs/images/diagrams/structurizr-1-Diagram-kontekstu.png)
 ![Klucz diagramu kontekstu wygenerowany na podstawie modelu structurizr](/docs/images/diagrams/structurizr-1-Diagram-kontekstu-key.png)
 
+### Diagram kontenerów
+![Diagram kontekstu wygenerowany na podstawie modelu structurizr](/docs/images/diagrams/structurizr-1-Diagram-kontenerow.png)
+![Klucz diagramu kontekstu wygenerowany na podstawie modelu structurizr](/docs/images/diagrams/structurizr-1-Diagram-kontenerow-key.png)
+
 
 ### Podstawowe terminy i pojęcia
 
