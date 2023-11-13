@@ -1,0 +1,172 @@
+{
+  "id" : 1,
+  "name" : "Name",
+  "description" : "Description",
+  "lastModifiedDate" : "2023-11-13T09:40:37Z",
+  "lastModifiedAgent" : "structurizr-javascript",
+  "properties" : {
+    "structurizr.dsl" : "d29ya3NwYWNlIHsKCiAgICBtb2RlbCB7CiAgICAgICAgIyBQZXJzb25hcwogICAgICAgIGNsaWVudCA9IHBlcnNvbiAiS2xpZW50IiAiVcW8eXRrb3duaWsgYXBsaWthY2ppLCBrdMOzcnkgbW9uaXRvcnVqZSBzd29qxIUgZGlldMSZIHNhbSBsdWIgcHJ6eSBwb21vY3kgZGlldGV0eWthIgogICAgICAgIGRpZXRpdGlhbiA9IHBlcnNvbiAiRGlldGV0eWsiICJVxbx5dGtvd25payBhcGxpa2FjamkgYsSZZMSFY3kgZGlldGV0eWtpZW0sIGt0w7NyeSB1c3RhbGEgY2VsZSBpIG1vbml0b3J1amUgcG9zdMSZcCBpIGRpZXTEmSBrbGllbnTDs3ciCgogICAgICAgICMgU3lzdGVtCiAgICAgICAgZGlldFBlbmd1aW4gPSBzb2Z0d2FyZVN5c3RlbSAiRGlldCBQZW5ndWluIiAiUG96d2FsYSB1xbx5dGtvd25pa29tIMWbbGVkemnEhyBzd29qxIUgZGlldMSZIGkgcG96aW9tIGFrdHl3bm/Fm2NpIHcga29udGVrxZtjaWUgY2Vsw7N3IHVzdGFsb255Y2ggcHJ6ZXogdcW8eXRrb3duaWthIGx1YiBqZWdvIGRpZXRldHlrYSIKCiAgICAgICAgIyBFeHRlcm5hbCBzeXN0ZW1zCiAgICAgICAgaWRlbnRpdHlQcm92aWRlciA9IHNvZnR3YXJlc3lzdGVtICJEb3N0YXdjYSB0b8W8c2Ftb8WbY2kiICJTeXN0ZW0gcHJ6ZWNob3d1asSFY3kgZGFuZSBsb2dvd2FuaWEgdcW8eXRrb3duaWvDs3cgaSBwb3p3YWxhasSFY3kgaW0gbmEgcmVqZXN0cmFjasSZIGkgbG9nb3dhbmllIHNpxJkiICJFeHRlcm5hbCBTeXN0ZW0iCgogICAgICAgICMgUmVsYXRpb25zaGlwcyBiZXR3ZWVuIHBlcnNvbmFzIGFuZCBzeXN0ZW1zCiAgICAgICAgIyMgTW9kZWxlZCBzeXN0ZW0KICAgICAgICBjbGllbnQgLT4gZGlldFBlbmd1aW4gIldwcm93YWR6YSBkYW5lIG8gcG9zacWCa2FjaCBpIGFrdHl3bm/Fm2NpIG9yYXogbW9uaXRvcnVqZSBwb3N0xJlwIGRvIHVzdGFsb255Y2ggY2Vsw7N3IgogICAgICAgIGRpZXRpdGlhbiAtPiBkaWV0UGVuZ3VpbiAiVXN0YWxhIGNlbGUsIG1vbml0b3J1amUgZG8gbmljaCBwb3N0xJlwIGkgd3Byb3dhZHphIHByemVwaXN5IGRsYSBzd29pY2gga2xpZW50w7N3IgogICAgICAgICMjIEV4dGVybmFsIHN5c3RlbXMKICAgICAgICBjbGllbnQgLT4gaWRlbnRpdHlQcm92aWRlciAiUmVqZXN0cnVqZSBpIGxvZ3VqZSBzacSZIgogICAgICAgIGRpZXRpdGlhbiAtPiBpZGVudGl0eVByb3ZpZGVyICJSZWplc3RydWplIGkgbG9ndWplIHNpxJkiCgogICAgICAgICMgUmVsYXRpb25zaGlwcyBiZXR3ZWVuIHN5c3RlbSBhbmQgZXhldGVybmFsIHN5c3RlbXMKICAgICAgICBkaWV0UGVuZ3VpbiAtPiBpZGVudGl0eVByb3ZpZGVyICJQb3R3aWVyZHphIHN0YXR1cyB6YWxvZ293YW5pYSB1xbx5dGtvd25pa2EiCiAgICB9CgogICAgdmlld3MgewogICAgICAgIHN5c3RlbUNvbnRleHQgZGlldFBlbmd1aW4gIkRpYWdyYW0ta29udGVrc3R1IiB7CiAgICAgICAgICAgIGluY2x1ZGUgKgogICAgICAgICAgICBhdXRvbGF5b3V0CiAgICAgICAgfQoKICAgICAgICB0aGVtZSBkZWZhdWx0CgoKICAgICAgICBzdHlsZXMgewogICAgICAgICAgICBlbGVtZW50ICJFeHRlcm5hbCBTeXN0ZW0iIHsKICAgICAgICAgICAgICAgIGJhY2tncm91bmQgIzk5OTk5OQogICAgICAgICAgICAgICAgY29sb3IgI2ZmZmZmZgogICAgICAgICAgICB9CiAgICAgICAgfQogICAgfQoKfQo="
+  },
+  "configuration" : { },
+  "model" : {
+    "people" : [ {
+      "id" : "1",
+      "tags" : "Element,Person",
+      "properties" : {
+        "structurizr.dsl.identifier" : "client"
+      },
+      "name" : "Klient",
+      "description" : "Użytkownik aplikacji, który monitoruje swoją dietę sam lub przy pomocy dietetyka",
+      "relationships" : [ {
+        "id" : "5",
+        "tags" : "Relationship",
+        "properties" : {
+          "structurizr.dsl.identifier" : "7bd90148-4b53-4134-bfd5-868de08e061b"
+        },
+        "sourceId" : "1",
+        "destinationId" : "3",
+        "description" : "Wprowadza dane o posiłkach i aktywności oraz monitoruje postęp do ustalonych celów"
+      }, {
+        "id" : "7",
+        "tags" : "Relationship",
+        "properties" : {
+          "structurizr.dsl.identifier" : "07ca6ddc-c628-4506-8c9e-dc420f79f371"
+        },
+        "sourceId" : "1",
+        "destinationId" : "4",
+        "description" : "Rejestruje i loguje się"
+      } ],
+      "location" : "Unspecified"
+    }, {
+      "id" : "2",
+      "tags" : "Element,Person",
+      "properties" : {
+        "structurizr.dsl.identifier" : "dietitian"
+      },
+      "name" : "Dietetyk",
+      "description" : "Użytkownik aplikacji będący dietetykiem, który ustala cele i monitoruje postęp i dietę klientów",
+      "relationships" : [ {
+        "id" : "6",
+        "tags" : "Relationship",
+        "properties" : {
+          "structurizr.dsl.identifier" : "70396501-3f2f-410f-b417-2b764d2f9b4f"
+        },
+        "sourceId" : "2",
+        "destinationId" : "3",
+        "description" : "Ustala cele, monitoruje do nich postęp i wprowadza przepisy dla swoich klientów"
+      }, {
+        "id" : "8",
+        "tags" : "Relationship",
+        "properties" : {
+          "structurizr.dsl.identifier" : "fb26a533-5e71-4c42-bfb1-15ee22e0cff2"
+        },
+        "sourceId" : "2",
+        "destinationId" : "4",
+        "description" : "Rejestruje i loguje się"
+      } ],
+      "location" : "Unspecified"
+    } ],
+    "softwareSystems" : [ {
+      "id" : "4",
+      "tags" : "Element,Software System,External System",
+      "properties" : {
+        "structurizr.dsl.identifier" : "identityprovider"
+      },
+      "name" : "Dostawca tożsamości",
+      "description" : "System przechowujący dane logowania użytkowników i pozwalający im na rejestrację i logowanie się",
+      "location" : "Unspecified",
+      "documentation" : { }
+    }, {
+      "id" : "3",
+      "tags" : "Element,Software System",
+      "properties" : {
+        "structurizr.dsl.identifier" : "dietpenguin"
+      },
+      "name" : "Diet Penguin",
+      "description" : "Pozwala użytkownikom śledzić swoją dietę i poziom aktywności w kontekście celów ustalonych przez użytkownika lub jego dietetyka",
+      "relationships" : [ {
+        "id" : "9",
+        "tags" : "Relationship",
+        "properties" : {
+          "structurizr.dsl.identifier" : "14d2a00c-2ec3-4146-bf89-7b09c1b5311e"
+        },
+        "sourceId" : "3",
+        "destinationId" : "4",
+        "description" : "Potwierdza status zalogowania użytkownika"
+      } ],
+      "location" : "Unspecified",
+      "documentation" : { }
+    } ]
+  },
+  "documentation" : { },
+  "views" : {
+    "systemContextViews" : [ {
+      "key" : "Diagram-kontekstu",
+      "order" : 1,
+      "softwareSystemId" : "3",
+      "dimensions" : {
+        "width" : 1829,
+        "height" : 2000
+      },
+      "automaticLayout" : {
+        "implementation" : "Graphviz",
+        "rankDirection" : "TopBottom",
+        "rankSeparation" : 300,
+        "nodeSeparation" : 300,
+        "edgeSeparation" : 0,
+        "vertices" : false
+      },
+      "enterpriseBoundaryVisible" : true,
+      "elements" : [ {
+        "id" : "1",
+        "x" : 200,
+        "y" : 200
+      }, {
+        "id" : "2",
+        "x" : 1229,
+        "y" : 200
+      }, {
+        "id" : "3",
+        "x" : 692,
+        "y" : 900
+      }, {
+        "id" : "4",
+        "x" : 692,
+        "y" : 1500
+      } ],
+      "relationships" : [ {
+        "id" : "5"
+      }, {
+        "id" : "6"
+      }, {
+        "id" : "7",
+        "vertices" : [ {
+          "x" : 542,
+          "y" : 1200
+        } ]
+      }, {
+        "id" : "8",
+        "vertices" : [ {
+          "x" : 1292,
+          "y" : 1200
+        } ]
+      }, {
+        "id" : "9"
+      } ]
+    } ],
+    "configuration" : {
+      "branding" : { },
+      "styles" : {
+        "elements" : [ {
+          "tag" : "External System",
+          "background" : "#999999",
+          "color" : "#ffffff"
+        } ]
+      },
+      "themes" : [ "https://static.structurizr.com/themes/default/theme.json" ],
+      "terminology" : { },
+      "metadataSymbols" : "SquareBrackets",
+      "lastSavedView" : "Diagram-kontekstu"
+    }
+  }
+}

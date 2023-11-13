@@ -5,6 +5,12 @@ Do wizualizacji projektowanego systemu używane będą diagramy [modelu C4](http
 - bazuje na oglądzie ["4+1"](https://en.wikipedia.org/wiki/4%2B1_architectural_view_model) na architekturę systemu
 - oparty na prostszym od UML języku modelowania, który może być uzupełniany dokładniejszymi diagramami UML dla części systemu, które tego wymagają
 
+### Diagram kontekstu
+
+![Diagram kontekstu wygenerowany na podstawie modelu structurizr](/docs/images/diagrams/structurizr-1-Diagram-kontekstu.png)
+![Klucz diagramu kontekstu wygenerowany na podstawie modelu structurizr](/docs/images/diagrams/structurizr-1-Diagram-kontekstu-key.png)
+
+
 ### Podstawowe terminy i pojęcia
 
 #### Poziomy abstrakcji
