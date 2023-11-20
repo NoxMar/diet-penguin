@@ -2,7 +2,7 @@
   "id" : 1,
   "name" : "Name",
   "description" : "Description",
-  "lastModifiedDate" : "2023-11-13T12:01:44Z",
+  "lastModifiedDate" : "2023-11-20T13:10:12Z",
   "lastModifiedAgent" : "structurizr-javascript",
   "properties" : {
     "structurizr.dsl" : "d29ya3NwYWNlIHsKCiAgICBtb2RlbCB7CiAgICAgICAgIyBQZXJzb25hcwogICAgICAgIGNsaWVudCA9IHBlcnNvbiAiS2xpZW50IiAiVcW8eXRrb3duaWsgYXBsaWthY2ppLCBrdMOzcnkgbW9uaXRvcnVqZSBzd29qxIUgZGlldMSZIHNhbSBsdWIgcHJ6eSBwb21vY3kgZGlldGV0eWthIgogICAgICAgIGRpZXRpdGlhbiA9IHBlcnNvbiAiRGlldGV0eWsiICJVxbx5dGtvd25payBhcGxpa2FjamkgYsSZZMSFY3kgZGlldGV0eWtpZW0sIGt0w7NyeSB1c3RhbGEgY2VsZSBpIG1vbml0b3J1amUgcG9zdMSZcCBpIGRpZXTEmSBrbGllbnTDs3ciCgogICAgICAgICMgU3lzdGVtCiAgICAgICAgZGlldFBlbmd1aW4gPSBzb2Z0d2FyZVN5c3RlbSAiRGlldCBQZW5ndWluIiAiUG96d2FsYSB1xbx5dGtvd25pa29tIMWbbGVkemnEhyBzd29qxIUgZGlldMSZIGkgcG96aW9tIGFrdHl3bm/Fm2NpIHcga29udGVrxZtjaWUgY2Vsw7N3IHVzdGFsb255Y2ggcHJ6ZXogdcW8eXRrb3duaWthIGx1YiBqZWdvIGRpZXRldHlrYSIgewogICAgICAgICAgICBzaW5nbGVQYWdlQXBwID0gY29udGFpbmVyICJQcm9ncmVzeXduYSBhcGxpa2FjamEgd2Vib3dhIHR5cHUgU1BBIiAiRG9zdGFyY3phIGludGVyZmVqcyBncmFmaWN6bnkgZGxhIHBlxYJuZWdvIHpha3Jlc3UgZnVua2Nqb25hbG5vxZtjaSBzeXN0ZW11IiAiUHJ6ZWdsxIVkYXJrYSBpIEJsYXpvciIgIldlYiBCcm93c2VyIgogICAgICAgICAgICBhcGlBcHAgPSBjb250YWluZXIgIkFwbGlrYWNqYSBBUEkiICJEb3N0YXJjemEgZnVua2Nqb25hbG5vxZvEhyBzeXN0ZW11IHBvcHJ6ZXogUkVTVCBBUEkiICJDIyBpIEFTUC5ORVQgQ29yZSIKICAgICAgICAgICAgZGF0YWJhc2UgPSBjb250YWluZXIgIkJhemEgZGFueWNoIiAiUHJ6ZWNob3d1amUgZGFuZSB6d2nEhXphbmUgeiB1xbx5dGtvd25pa2FtaSwgaGlzdG9yacSZIGljaCBkaWV0eSBpIGFrdHl3bm/Fm2NpIG9yYXogY2VsZS4gTklFIHByemVjaG93dWplIGRhbnljaCBsb2dvd2FuaWEiICJNUyBTUUwgU2VydmVyIiAiRGF0YWJhc2UiCiAgICAgICAgfQoKICAgICAgICAjIEV4dGVybmFsIHN5c3RlbXMKICAgICAgICBpZGVudGl0eVByb3ZpZGVyID0gc29mdHdhcmVzeXN0ZW0gIkRvc3Rhd2NhIHRvxbxzYW1vxZtjaSIgIlN5c3RlbSBwcnplY2hvd3VqxIVjeSBkYW5lIGxvZ293YW5pYSB1xbx5dGtvd25pa8OzdyBpIHBvendhbGFqxIVjeSBpbSBuYSByZWplc3RyYWNqxJkgaSBsb2dvd2FuaWUgc2nEmSIgIkV4dGVybmFsIFN5c3RlbSIKCiAgICAgICAgIyBSZWxhdGlvbnNoaXBzIGJldHdlZW4gcGVyc29uYXMgYW5kIHN5c3RlbXMKICAgICAgICAjIyBNb2RlbGVkIHN5c3RlbQogICAgICAgIGNsaWVudCAtPiBkaWV0UGVuZ3VpbiAiV3Byb3dhZHphIGRhbmUgbyBwb3NpxYJrYWNoIGkgYWt0eXdub8WbY2kgb3JheiBtb25pdG9ydWplIHBvc3TEmXAgZG8gdXN0YWxvbnljaCBjZWzDs3ciCiAgICAgICAgZGlldGl0aWFuIC0+IGRpZXRQZW5ndWluICJVc3RhbGEgY2VsZSwgbW9uaXRvcnVqZSBkbyBuaWNoIHBvc3TEmXAgaSB3cHJvd2FkemEgcHJ6ZXBpc3kgZGxhIHN3b2ljaCBrbGllbnTDs3ciCiAgICAgICAgIyMgRXh0ZXJuYWwgc3lzdGVtcwogICAgICAgIGNsaWVudCAtPiBpZGVudGl0eVByb3ZpZGVyICJSZWplc3RydWplIGkgbG9ndWplIHNpxJkiICJIVFRQUyIKICAgICAgICBkaWV0aXRpYW4gLT4gaWRlbnRpdHlQcm92aWRlciAiUmVqZXN0cnVqZSBpIGxvZ3VqZSBzacSZIiAiSFRUUFMiCgogICAgICAgICMgUmVsYXRpb25zaGlwcyBiZXR3ZWVuIHN5c3RlbSBhbmQgZXhldGVybmFsIHN5c3RlbXMKICAgICAgICBkaWV0UGVuZ3VpbiAtPiBpZGVudGl0eVByb3ZpZGVyICJQb3R3aWVyZHphIHN0YXR1cyB6YWxvZ293YW5pYSB1xbx5dGtvd25pa2EiCgogICAgICAgICMgUmVsYXRpb25zaGlwcyBiZXR3ZWVuIGNvbnRhaW5lcnMKICAgICAgICAjIyBDb250YWluZXIgPC0+IGNvbnRhaW5lcgogICAgICAgIGFwaUFwcCAtPiBkYXRhYmFzZSAiT2Rjenl0dWplIHogaSB6YXBpc3VqZSBkbyIgIlNRTC9UQ1AiCiAgICAgICAgc2luZ2xlUGFnZUFwcCAtPiBhcGlBcHAgIld5a29udWplIMW8xIVkYW5pYSBBUEkiICJKU09OL0hUVFBTIgogICAgICAgICMjIENvdG5haW5lciA8LT4gc3lzdGVtCiAgICAgICAgYXBpQXBwIC0+IGlkZW50aXR5UHJvdmlkZXIgIldhbGlkdWplIHBvxZt3aWFkY3plbmllIHRvxbxzYW1vxZtjaSB1xbx5dGtvd25pa2EiICJPSURDIEpTT04vSFRUUFMiCiAgICAgICAgIyMgUGVyc29uYSA8LT4gQ29udGFpbmVyCiAgICAgICAgY2xpZW50IC0+IHNpbmdsZVBhZ2VBcHAgIldwcm93YWR6YSBkYW5lLCBwcnplZ2zEhWRhIGplIGkgc3ByYXdkemEgcG9zdMSZcCB3emdsxJlkZW0gY2Vsw7N3IgogICAgICAgIGRpZXRpdGlhbiAtPiBzaW5nbGVQYWdlQXBwICJQcnplZ2zEhWRhIHBvc3TEmXAgc3dvaWNoIGtsaWVudMOzdyBpIHVzdGFsYSBpY2ggY2VsZSIKICAgIH0KCiAgICB2aWV3cyB7CiAgICAgICAgc3lzdGVtQ29udGV4dCBkaWV0UGVuZ3VpbiAiRGlhZ3JhbS1rb250ZWtzdHUiIHsKICAgICAgICAgICAgaW5jbHVkZSAqCiAgICAgICAgICAgIGF1dG9sYXlvdXQKICAgICAgICB9CgogICAgICAgIGNvbnRhaW5lciBkaWV0UGVuZ3VpbiAiRGlhZ3JhbS1rb250ZW5lcm93IiB7CiAgICAgICAgICAgIGluY2x1ZGUgKgogICAgICAgICAgICBhdXRvbGF5b3V0CiAgICAgICAgfQoKICAgICAgICB0aGVtZSBkZWZhdWx0CgoKICAgICAgICBzdHlsZXMgewogICAgICAgICAgICBlbGVtZW50ICJFeHRlcm5hbCBTeXN0ZW0iIHsKICAgICAgICAgICAgICAgIGJhY2tncm91bmQgIzk5OTk5OQogICAgICAgICAgICAgICAgY29sb3IgI2ZmZmZmZgogICAgICAgICAgICB9CiAgICAgICAgICAgIGVsZW1lbnQgIkRhdGFiYXNlIiB7CiAgICAgICAgICAgICAgICBzaGFwZSBDeWxpbmRlcgogICAgICAgICAgICB9CiAgICAgICAgICAgIGVsZW1lbnQgIldlYiBCcm93c2VyIiB7CiAgICAgICAgICAgICAgICBzaGFwZSBXZWJCcm93c2VyCiAgICAgICAgICAgIH0KICAgICAgICB9CiAgICB9Cgp9Cg=="
@@ -10,6 +10,44 @@
   "configuration" : { },
   "model" : {
     "people" : [ {
+      "id" : "2",
+      "tags" : "Element,Person",
+      "properties" : {
+        "structurizr.dsl.identifier" : "dietitian"
+      },
+      "name" : "Dietetyk",
+      "description" : "Użytkownik aplikacji będący dietetykiem, który ustala cele i monitoruje postęp i dietę klientów",
+      "relationships" : [ {
+        "id" : "11",
+        "tags" : "Relationship",
+        "properties" : {
+          "structurizr.dsl.identifier" : "c9cf8f4e-3fd0-401e-a0ab-e6c581551075"
+        },
+        "sourceId" : "2",
+        "destinationId" : "7",
+        "description" : "Rejestruje i loguje się",
+        "technology" : "HTTPS"
+      }, {
+        "id" : "9",
+        "tags" : "Relationship",
+        "properties" : {
+          "structurizr.dsl.identifier" : "374d9fc3-0f9e-4c41-b03d-8e4cbd5c0a67"
+        },
+        "sourceId" : "2",
+        "destinationId" : "3",
+        "description" : "Ustala cele, monitoruje do nich postęp i wprowadza przepisy dla swoich klientów"
+      }, {
+        "id" : "17",
+        "tags" : "Relationship",
+        "properties" : {
+          "structurizr.dsl.identifier" : "ec48229b-0950-4096-aea1-7816e82e3b0a"
+        },
+        "sourceId" : "2",
+        "destinationId" : "4",
+        "description" : "Przegląda postęp swoich klientów i ustala ich cele"
+      } ],
+      "location" : "Unspecified"
+    }, {
       "id" : "1",
       "tags" : "Element,Person",
       "properties" : {
@@ -21,68 +59,30 @@
         "id" : "8",
         "tags" : "Relationship",
         "properties" : {
-          "structurizr.dsl.identifier" : "ea99400c-e522-4558-9b33-26ed9903c597"
+          "structurizr.dsl.identifier" : "4f1803df-1559-4292-8270-53b94c2caad0"
         },
         "sourceId" : "1",
         "destinationId" : "3",
         "description" : "Wprowadza dane o posiłkach i aktywności oraz monitoruje postęp do ustalonych celów"
       }, {
-        "id" : "10",
-        "tags" : "Relationship",
-        "properties" : {
-          "structurizr.dsl.identifier" : "ff925019-96ee-4371-9445-c7a05a91e726"
-        },
-        "sourceId" : "1",
-        "destinationId" : "7",
-        "description" : "Rejestruje i loguje się",
-        "technology" : "HTTPS"
-      }, {
         "id" : "16",
         "tags" : "Relationship",
         "properties" : {
-          "structurizr.dsl.identifier" : "cd2c9893-21f3-445b-bdb0-60faf8ecfb53"
+          "structurizr.dsl.identifier" : "f2db3d5a-781d-47b7-a590-94ffdd505641"
         },
         "sourceId" : "1",
         "destinationId" : "4",
         "description" : "Wprowadza dane, przegląda je i sprawdza postęp względem celów"
-      } ],
-      "location" : "Unspecified"
-    }, {
-      "id" : "2",
-      "tags" : "Element,Person",
-      "properties" : {
-        "structurizr.dsl.identifier" : "dietitian"
-      },
-      "name" : "Dietetyk",
-      "description" : "Użytkownik aplikacji będący dietetykiem, który ustala cele i monitoruje postęp i dietę klientów",
-      "relationships" : [ {
-        "id" : "17",
-        "tags" : "Relationship",
-        "properties" : {
-          "structurizr.dsl.identifier" : "13e3fe94-1f88-431e-a965-ef4017ec382b"
-        },
-        "sourceId" : "2",
-        "destinationId" : "4",
-        "description" : "Przegląda postęp swoich klientów i ustala ich cele"
       }, {
-        "id" : "11",
+        "id" : "10",
         "tags" : "Relationship",
         "properties" : {
-          "structurizr.dsl.identifier" : "ba27b426-90c7-42b4-8326-bba548c37acf"
+          "structurizr.dsl.identifier" : "fcb3b928-8b22-482f-b5b1-398012670516"
         },
-        "sourceId" : "2",
+        "sourceId" : "1",
         "destinationId" : "7",
         "description" : "Rejestruje i loguje się",
         "technology" : "HTTPS"
-      }, {
-        "id" : "9",
-        "tags" : "Relationship",
-        "properties" : {
-          "structurizr.dsl.identifier" : "a8a1fee7-d200-44e3-a085-a093153e04fd"
-        },
-        "sourceId" : "2",
-        "destinationId" : "3",
-        "description" : "Ustala cele, monitoruje do nich postęp i wprowadza przepisy dla swoich klientów"
       } ],
       "location" : "Unspecified"
     } ],
@@ -98,7 +98,7 @@
         "id" : "12",
         "tags" : "Relationship",
         "properties" : {
-          "structurizr.dsl.identifier" : "c39bd078-6712-41b0-9959-541f1917716b"
+          "structurizr.dsl.identifier" : "cb3dcf6d-b8bb-45b7-8c4c-27619aa20d4b"
         },
         "sourceId" : "3",
         "destinationId" : "7",
@@ -106,25 +106,35 @@
       } ],
       "location" : "Unspecified",
       "containers" : [ {
-        "id" : "4",
-        "tags" : "Element,Container,Web Browser",
+        "id" : "5",
+        "tags" : "Element,Container",
         "properties" : {
-          "structurizr.dsl.identifier" : "singlepageapp"
+          "structurizr.dsl.identifier" : "apiapp"
         },
-        "name" : "Progresywna aplikacja webowa typu SPA",
-        "description" : "Dostarcza interfejs graficzny dla pełnego zakresu funkcjonalności systemu",
+        "name" : "Aplikacja API",
+        "description" : "Dostarcza funkcjonalność systemu poprzez REST API",
         "relationships" : [ {
-          "id" : "14",
+          "id" : "15",
           "tags" : "Relationship",
           "properties" : {
-            "structurizr.dsl.identifier" : "181e8075-c468-48be-b288-13e0d87f0d7d"
+            "structurizr.dsl.identifier" : "5883e800-8688-40d8-aa1b-9d50bc9f381b"
           },
-          "sourceId" : "4",
-          "destinationId" : "5",
-          "description" : "Wykonuje żądania API",
-          "technology" : "JSON/HTTPS"
+          "sourceId" : "5",
+          "destinationId" : "7",
+          "description" : "Waliduje poświadczenie tożsamości użytkownika",
+          "technology" : "OIDC JSON/HTTPS"
+        }, {
+          "id" : "13",
+          "tags" : "Relationship",
+          "properties" : {
+            "structurizr.dsl.identifier" : "2254d86f-2a24-4645-8ab3-df2ee2931f98"
+          },
+          "sourceId" : "5",
+          "destinationId" : "6",
+          "description" : "Odczytuje z i zapisuje do",
+          "technology" : "SQL/TCP"
         } ],
-        "technology" : "Przeglądarka i Blazor",
+        "technology" : "C# i ASP.NET Core",
         "documentation" : { }
       }, {
         "id" : "6",
@@ -137,35 +147,25 @@
         "technology" : "MS SQL Server",
         "documentation" : { }
       }, {
-        "id" : "5",
-        "tags" : "Element,Container",
+        "id" : "4",
+        "tags" : "Element,Container,Web Browser",
         "properties" : {
-          "structurizr.dsl.identifier" : "apiapp"
+          "structurizr.dsl.identifier" : "singlepageapp"
         },
-        "name" : "Aplikacja API",
-        "description" : "Dostarcza funkcjonalność systemu poprzez REST API",
+        "name" : "Progresywna aplikacja webowa typu SPA",
+        "description" : "Dostarcza interfejs graficzny dla pełnego zakresu funkcjonalności systemu",
         "relationships" : [ {
-          "id" : "13",
+          "id" : "14",
           "tags" : "Relationship",
           "properties" : {
-            "structurizr.dsl.identifier" : "1805fe18-f380-40c1-9d22-c86f04360b24"
+            "structurizr.dsl.identifier" : "e0085dd5-332d-4027-8c42-e5fdbe3bf88d"
           },
-          "sourceId" : "5",
-          "destinationId" : "6",
-          "description" : "Odczytuje z i zapisuje do",
-          "technology" : "SQL/TCP"
-        }, {
-          "id" : "15",
-          "tags" : "Relationship",
-          "properties" : {
-            "structurizr.dsl.identifier" : "4e378be7-072a-44c8-88ba-0667bb035f65"
-          },
-          "sourceId" : "5",
-          "destinationId" : "7",
-          "description" : "Waliduje poświadczenie tożsamości użytkownika",
-          "technology" : "OIDC JSON/HTTPS"
+          "sourceId" : "4",
+          "destinationId" : "5",
+          "description" : "Wykonuje żądania API",
+          "technology" : "JSON/HTTPS"
         } ],
-        "technology" : "C# i ASP.NET Core",
+        "technology" : "Przeglądarka i Blazor",
         "documentation" : { }
       } ],
       "documentation" : { }
@@ -187,6 +187,10 @@
       "key" : "Diagram-kontekstu",
       "order" : 1,
       "softwareSystemId" : "3",
+      "dimensions" : {
+        "width" : 1829,
+        "height" : 2000
+      },
       "automaticLayout" : {
         "implementation" : "Graphviz",
         "rankDirection" : "TopBottom",
@@ -198,23 +202,27 @@
       "enterpriseBoundaryVisible" : true,
       "elements" : [ {
         "id" : "1",
-        "x" : 0,
-        "y" : 0
+        "x" : 200,
+        "y" : 200
       }, {
         "id" : "2",
-        "x" : 0,
-        "y" : 0
+        "x" : 1229,
+        "y" : 200
       }, {
         "id" : "3",
-        "x" : 0,
-        "y" : 0
+        "x" : 692,
+        "y" : 900
       }, {
         "id" : "7",
-        "x" : 0,
-        "y" : 0
+        "x" : 692,
+        "y" : 1500
       } ],
       "relationships" : [ {
-        "id" : "11"
+        "id" : "11",
+        "vertices" : [ {
+          "x" : 1292,
+          "y" : 1200
+        } ]
       }, {
         "id" : "12"
       }, {
@@ -222,7 +230,11 @@
       }, {
         "id" : "9"
       }, {
-        "id" : "10"
+        "id" : "10",
+        "vertices" : [ {
+          "x" : 542,
+          "y" : 1200
+        } ]
       } ]
     } ],
     "containerViews" : [ {
@@ -244,28 +256,28 @@
       "externalSoftwareSystemBoundariesVisible" : true,
       "elements" : [ {
         "id" : "1",
-        "x" : 200,
-        "y" : 200
+        "x" : 0,
+        "y" : 0
       }, {
         "id" : "2",
-        "x" : 1046,
-        "y" : 200
+        "x" : 0,
+        "y" : 0
       }, {
         "id" : "4",
-        "x" : 1171,
-        "y" : 900
+        "x" : 0,
+        "y" : 0
       }, {
         "id" : "5",
-        "x" : 1171,
-        "y" : 1500
+        "x" : 0,
+        "y" : 0
       }, {
         "id" : "6",
-        "x" : 1171,
-        "y" : 2100
+        "x" : 0,
+        "y" : 0
       }, {
         "id" : "7",
-        "x" : 421,
-        "y" : 2100
+        "x" : 0,
+        "y" : 0
       } ],
       "relationships" : [ {
         "id" : "17"
@@ -278,17 +290,9 @@
       }, {
         "id" : "13"
       }, {
-        "id" : "11",
-        "vertices" : [ {
-          "x" : 992,
-          "y" : 796
-        } ]
+        "id" : "11"
       }, {
-        "id" : "10",
-        "vertices" : [ {
-          "x" : 488,
-          "y" : 1800
-        } ]
+        "id" : "10"
       } ]
     } ],
     "configuration" : {
@@ -309,7 +313,7 @@
       "themes" : [ "https://static.structurizr.com/themes/default/theme.json" ],
       "terminology" : { },
       "metadataSymbols" : "SquareBrackets",
-      "lastSavedView" : "Diagram-kontenerow"
+      "lastSavedView" : "Diagram-kontekstu"
     }
   }
 }
