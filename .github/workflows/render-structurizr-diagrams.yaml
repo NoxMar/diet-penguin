@@ -1,0 +1,53 @@
+name: Wyrenderuj diagramy Struturizr
+
+on: 
+  push:
+    paths:
+      - structurizr/*
+  
+  pull_request:
+    paths:
+      - structurizr/*
+
+jobs:
+  renderDiagrams:
+    name: Wyrenderuj diagramy
+
+    runs-on: ubuntu-latest
+
+    timeout-minutes: 5
+    
+    permissions:
+      # Needed for stefanzweifel/git-auto-commit-action@v5
+      contents: write
+
+    steps:
+      - name: 
+        uses: actions/checkout@v2
+
+      - name: Wyeksportuj diagramy Structurizr do formatu DOT
+        run: >
+          docker run --rm -v $PWD:/usr/local/structurizr structurizr/cli export
+          -workspace structurizr/workspace.json
+          -format dot
+          -output diagrams-dot
+      
+      - name: Zinstaluj GraphViz
+        run: sudo apt-get update && sudo apt-get install -y graphviz
+
+      - name: Wyrenderuj pliki DOT do obrazów w formacie PNG
+        run: |
+          input_directory="diagrams-dot"
+          output_directory="docs/images/diagrams"
+          for dot_file in "$input_directory"/*.dot; do
+          if [ -f "$dot_file" ]; then
+            filename=$(basename "$dot_file" .dot)
+            dot -Tpng "$dot_file" -o "$output_directory/$filename.png"
+          fi
+          done
+          
+      - name: Dodaj wyrenderowane diagramy do repozytorium
+        uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_message: "chore: wyrenderuj diagramy"
+          file_pattern: "docs/images/diagrams/**"
