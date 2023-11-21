@@ -41,3 +41,9 @@ Jeśli commit dotyczy jednego z tych zakresów **należy go oznaczyć** natomias
 
 - backend
 - frontned
+
+## Github Actions
+
+### Workflowy
+
+- [Wyrenderuj diagramy Struturizr](/.github/workflows/render-structurizr-diagrams.yaml) - Renderuje diagramy, jeżeli ich źródło zostało zmienione **a pliki wyrenderowanych diagramów nie**. Preferowane jest korzystanie z narzędzia [Structurizr Lite](https://structurizr.com/help/lite) ze względu na lepszą czytelność. **UWAGA: Ręcznie wyrenderuj wszystkie zmienione diagramy, jeśli którykolwiek został wyrenderowany ręcznie.** Akcja nie jest w stanie rozróżnić, które diagramy uległy zmianie, a które nie.

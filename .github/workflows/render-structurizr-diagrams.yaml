@@ -22,10 +22,23 @@ jobs:
       contents: write
 
     steps:
-      - name: 
+      - name: Załaduj repozytorium
         uses: actions/checkout@v2
 
+      # If diagrams were rendered manually don't render them using this action since the results are less readable.
+      - name: Sprawdź czy nie wyrenderowano diagramów ręcznie
+        id: checkManuallyRendered
+        run: |
+          if ! git diff --quiet --exit-code docs/images/diagrams; then
+            echo "Diagramy wyrenderowano ręcznie, nie dokonuję próby renderowania w akcji."
+            echo "manually_rendered=true" >> $GITHUB_OUTPUT
+          else
+            echo "Zmieniono źródło diagramów bez ich renderowania. Przchodzę do następnych kroków renderowania."
+            echo "manually_rendered=false" >> $GITHUB_OUTPUT
+          fi
+
       - name: Wyeksportuj diagramy Structurizr do formatu DOT
+        if: steps.checkManuallyRendered.outputs.manually_rendered == 'false'
         run: >
           docker run --rm -v $PWD:/usr/local/structurizr structurizr/cli export
           -workspace structurizr/workspace.json
@@ -33,9 +46,11 @@ jobs:
           -output diagrams-dot
       
       - name: Zinstaluj GraphViz
+        if: steps.checkManuallyRendered.outputs.manually_rendered == 'false'
         run: sudo apt-get update && sudo apt-get install -y graphviz
 
       - name: Wyrenderuj pliki DOT do obrazów w formacie PNG
+        if: steps.checkManuallyRendered.outputs.manually_rendered == 'false'
         run: |
           input_directory="diagrams-dot"
           output_directory="docs/images/diagrams"
@@ -47,6 +62,7 @@ jobs:
           done
           
       - name: Dodaj wyrenderowane diagramy do repozytorium
+        if: steps.checkManuallyRendered.outputs.manually_rendered == 'false'
         uses: stefanzweifel/git-auto-commit-action@v5
         with:
           commit_message: "chore: wyrenderuj diagramy"
