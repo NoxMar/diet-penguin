@@ -7,10 +7,15 @@ Do wizualizacji projektowanego systemu używane będą diagramy [modelu C4](http
 
 ### Diagram kontekstu
 
+Ten diagram ukazuje system w kontekście zewnętrznych agentów i systemów, z którymi współdziała. Przedstawia role tych encji oraz wzajemne 'zastosowanie'.
+
 ![Diagram kontekstu wygenerowany na podstawie modelu structurizr](/docs/images/diagrams/structurizr-1-Diagram-kontekstu.png)
 ![Klucz diagramu kontekstu wygenerowany na podstawie modelu structurizr](/docs/images/diagrams/structurizr-1-Diagram-kontekstu-key.png)
 
 ### Diagram kontenerów
+
+Diagram przedstawia jednostki systemu (takie jak aplikacje czy bazy danych), ich wymagania od środowisk uruchomieniowych oraz relacje z innymi jednostkami i zewnętrznymi systemami.
+
 ![Diagram kontekstu wygenerowany na podstawie modelu structurizr](/docs/images/diagrams/structurizr-1-Diagram-kontenerow.png)
 ![Klucz diagramu kontekstu wygenerowany na podstawie modelu structurizr](/docs/images/diagrams/structurizr-1-Diagram-kontenerow-key.png)
 
