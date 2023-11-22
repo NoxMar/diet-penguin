@@ -42,6 +42,26 @@ Jeśli commit dotyczy jednego z tych zakresów **należy go oznaczyć** natomias
 - backend
 - frontned
 
+## Narzędzia do użycia przez deweloperów
+
+### Diagramy
+
+> [!NOTE] 
+> korki 2-4 mogą być zastępnione przez uruchomienie skryptu PowerShel w ścieżce [/scripts/Start-StructurizrLite.ps1](/scripts/Start-StructurizrLite.ps1). Urchomi on kontener i otorzwy WebUI narzędzia [Structurizr Lite](https://structurizr.com/help/lite) w przeglądarce. Jeśli chcesz użyć portu innego niż `8080` wywołaj skrypt z atrybutem `-HostPort <port>`. Sposób uruchomienia skryptu opisany jest w jego treści jednak, w skrócie, wydanie następujacego pocenia w PowerShell z **głównego katalogu tego repozytorium** powinno być wystarczające:
+>
+> `PowerShell -ExecutionPolicy Bypass -File scripts/Start-StructurizrLite.ps1 [-HostPort <port>]`
+> 
+> Parametr `-HostPort` jest opcjonalny.
+
+W ramach tego projektu używany jest [Structurizr](https://structurizr.com/) ([dokładniejszy opis użycia w projekcie](system-design.md#wizualizacja-systemu)). Narzędziem zalecanym do edycji diagramów na maszynach deweloperskich jest [Structurizr Lite](https://structurizr.com/help/lite). Poniżej przedstawiam instrukcję jego użycia:
+1. Upewnij się, że masz zainstalowany na maszynie [Docker](https://docs.docker.com/engine/install/)
+2. Uruchom kontener bazujący na [obrazie Structurizr Lite](https://hub.docker.com/r/structurizr/lite) poleceniem `docker run -it --rm -p <port_na_ktorym_chcesz_miec_dostep>:8080 -v <sciezka_do_katalogu_structurizr>:/usr/local/structurizr structurizr/lite`
+    - dla przykładu jeśli masz na swojej maszynie wolny port 8080 i polecenie wydajesz z katalogu głównego tego repozytorium, ta komenda przybierze formę: `docker run -it --rm -p 8080:8080 -v ./structurizr:/usr/local/structurizr structurizr/lite` (**w 99.99% przypadków można użyć tej komendy bez zmian, najwyżej zmieniając port**)
+3. Zaczekaj na uruchomienie kontonera (zazwyczaj nie więcej niż 10 sekund). Będzie to zasygnalizowane wypisaniem przez kontener informacji o licencji.
+4. Otwórz w przeglądarce adres [http://localhost:8080](http://localhost:8080) (zmień port jeśli używasz innego). **UWAGA:** kontener nie używa HTTPS, wprowadzając link musisz użyć prefiksu protokołu `http://`.
+5. Możesz teraz dokonywać edycji pliku opisującego system i jego diagramy w pliku [/structurizr/workspace.dsl](/structurizr/workspace.dsl). Jeśli chcesz podejrzeć nowe diagramy, odśwież otwartą w korku 4 kartę w przeglądarce.
+6. Gdy skończysz edycję i chcesz dodać jej wyniki do repozytorium **silnie zalecane jest wyeksporotowanie ich i zapisanie do [/docs/images/diagrams/](/docs/images/diagrams/)**. Jeśli tego nie zrobisz zostają wyrenderowane przez [workflow](#workflowy) jednak nie jest to preferowane. Jeśli chcesz zapoznać się z powodem przeczytaj [opis workflowu "Wyrenderuj diagramy Struturizr"](#workflowy).
+
 ## Github Actions
 
 ### Workflowy
