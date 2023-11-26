@@ -4,7 +4,8 @@
 
 Szablon używany w tym projekcie jest zainspirowany [szablonem AlphaFounders](https://github.com/AlphaFounders/style-guide/blob/master/agile-user-story.md) oraz [artykułem](https://www.mountaingoatsoftware.com/blog/why-the-three-part-user-story-template-works-so-well), na którym on bazuje.
 
-> [!NOTE] Część zawierająca `<wartość-dodana-dla-persony>` jest opcjonalna jednak w **znacznej większości przypadków zalecana**.
+> [!NOTE]
+> Część zawierająca `<wartość-dodana-dla-persony>` jest opcjonalna jednak w **znacznej większości przypadków zalecana**.
 
 ```markdown
 Każda historyjka użytkownika używać będzie następującego szablonu:
