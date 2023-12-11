@@ -44,6 +44,31 @@ Jeśli commit dotyczy jednego z tych zakresów **należy go oznaczyć** natomias
 
 ## Narzędzia do użycia przez deweloperów
 
+### Automatyczne sprawdzanie wiadomości commitu
+
+Automatyzacja sprawdzania zgodności wiadomości commitu z ustalonym [standardem](#wiadomości-commitów) możliwa jest przy użyciu [git hook](https://git-scm.com/book/en/v2/Customizing-Git-Git-Hooks) skonfigurowanego przy użyciu narzędzi [commitlint](https://commitlint.js.org/) i [husky](https://typicode.github.io/husky/). Aby używać [tego](/.husky/commit-msg) hooka trzeba **z katalogu repozytorium**, wydać po jego sklonowaniu następujące polecenia (na maszynie **muszą być zainstalowane [node.js i npm](https://nodejs.org/en)**):
+
+```sh
+npm install
+npx husky install
+```
+
+Po tych krokach próba dodania commitu, którego wiadomość nie jest zgodna z przyjętą specyfikacją powodować będzie błąd dodania commitu. Treść tego błędu będzie zawierać informacje o tym, które reguły zostały naruszone.
+
+Przykład:
+
+```ps
+git commit -m "wiadomosc z bledem"
+⧗   input: wiadomosc z bledem
+✖   subject may not be empty [subject-empty]
+✖   type may not be empty [type-empty]
+
+✖   found 2 problems, 0 warnings
+ⓘ   Get help: https://github.com/conventional-changelog/commitlint/#what-is-commitlint
+
+husky - commit-msg hook exited with code 1 (error)
+```
+
 ### Diagramy
 
 > [!NOTE] 
