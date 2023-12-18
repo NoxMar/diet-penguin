@@ -1,3 +1,7 @@
+## Wymagania funkcjonalne
+
+Wymagania funkcjonalne dokumentowane są w postaci historyjek użytkownika znajdujących się w [issues repozytorium bez etykiety `dev`](https://github.com/NoxMar/diet-penguin/issues?q=is%3Aissue+-label%3Adev+). Historyjki użytkownik na wczesnych etapach precyzowania (niemające jeszcze sprecyzowanych kryteriów akceptacyjnych) mogą być znalezione [na odpowiednim widoku w projekcie](https://github.com/users/NoxMar/projects/4/views/1). Szablon historyjek użytkownika z wyjaśnieniem zawarty jest w [osobnym pliku](user-stories.md).
+
 ## Wizualizacja systemu
 
 Do wizualizacji projektowanego systemu używane będą diagramy [modelu C4](https://c4model.com/). Ważne cechy tego modelu to:
