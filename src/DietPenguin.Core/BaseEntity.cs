@@ -57,7 +57,7 @@ public abstract class BaseEntity
     /// </summary>
     /// <param name="createdOn">Moment utworzenia</param>
     /// <param name="createdBy">Identyfikator (e-mail) użytkownika, który utworzył.</param>
-    protected void UpdateCreationProperties(DateTime createdOn, string? createdBy)
+    public void UpdateCreationProperties(DateTime createdOn, string? createdBy)
     {
         CreatedOn = createdOn;
         CreatedBy = createdBy;
@@ -68,7 +68,7 @@ public abstract class BaseEntity
     /// </summary>
     /// <param name="lastModified">Moment ostatniej modyfikacji</param>
     /// <param name="modifiedBy">Identyfikator (e-mail) użytkownika, który zmodyfikował.</param>
-    protected void UpdateModifiedProperties(DateTime? lastModified, string? modifiedBy)
+    public void UpdateModifiedProperties(DateTime? lastModified, string? modifiedBy)
     {
         LastModifiedOn = lastModified;
         LastModifiedBy = modifiedBy;
@@ -102,5 +102,10 @@ public abstract class BaseEntity
         {
             _domainEvents.Add(@event);
         }
+    }
+
+    public void ClearDomainEvents()
+    {
+        _domainEvents.Clear();
     }
 }

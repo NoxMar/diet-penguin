@@ -101,4 +101,25 @@ public class BaseEntityTests
         // Assert
         sut.IsDeleted.Should().BeFalse();
     }
+
+    [Theory]
+    [InlineData(0)]
+    [InlineData(1)]
+    [InlineData(10)]
+    public void ClearDomainEvents_CalledRegardlessOfEventCount_ClearQueuedEvents(int eventCount)
+    {
+        // Arrange
+        var sut = Substitute.For<BaseEntity>();
+        for (int i = 0; i < eventCount; i++)
+        {
+            sut.QueueDomainEvent(new TestDomainEvent(i));
+        }
+        
+        // Act
+        sut.ClearDomainEvents();
+        
+        // Assert
+
+        sut.DomainEvents.Should().HaveCount(0);
+    }
 }
