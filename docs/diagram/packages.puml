@@ -1,0 +1,25 @@
+@startuml
+
+package "DietPenguin.Core"
+note right: Elementy wspólne dla wszystkich aspektów domeny\n(abstrakcja encji, agregatu, zdarzenia domenowego itp.)
+package "DietPenguin.Domain"
+note left: Kod opisujący aspekty domeny potrzebne dla realizowanej zadań aplikacji
+package "DietPenguin.Infrastructure"
+note top: Infrastruktura potrzebna do działania\naplikacji dostarczana często przez integrację zewnętrznych zasobów.\nCzęsto implementuje interfejsy zdefiniowane w `DietPenguin.Domain` 
+package "DietPenguin.Application"
+note bottom: Koordynacja usług i zaimplementowanych pojęć domenowych w celu implementacji konkretnych przypadków użycia.
+package "DietPenguin.WebApi"
+note top: "Cienkie" kontrolery przekazujące żądania do `DietPenguin.Application` \ni integrujące pozostałe warstwy we wdrażalną jednostkę.
+package "DietPenguin.WebApi.Contracts"
+note left: Kontrakty (DTO) API
+package "DietPenguin.Gui"
+note top: Aplikacja SPA
+
+[DietPenguin.Domain] --> [DietPenguin.Core]
+[DietPenguin.Application] --> [DietPenguin.Domain]
+[DietPenguin.Infrastructure] --> [DietPenguin.Domain]
+[DietPenguin.WebApi] --> [DietPenguin.Application]
+[DietPenguin.WebApi] --> [DietPenguin.WebApi.Contracts]
+[DietPenguin.Gui] --> [DietPenguin.WebApi.Contracts]
+
+@enduml

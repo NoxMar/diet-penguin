@@ -1,0 +1,1 @@
+namespace DietPenguin.Gui.Tests;
