@@ -1,10 +1,8 @@
 namespace DietPenguin.Domain;
 
-public record MassValue
+public record MassValue : ValueWithUnit
 {
-    public decimal Value { get; private init; }
-    public MassUnit Unit { get; private init; }
-    public MassValue(decimal value, MassUnit unit)
+    public MassValue(decimal value, MassUnit unit) : base(value, unit)
     {
         if (value < 0M)
         {
