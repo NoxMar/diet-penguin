@@ -45,8 +45,13 @@ public class User : BaseEntity
         INutritionalNeedsService nutritionalNeedsService
     )
     {
+        if (heightCm <= 0)
+        {
+            return Result<User>.Failure(UserErrors.HeightLowerThanOrEquals0);
+        }
         var user = new User(dateOfBirth, gender, weight, heightCm);
         
+        user.QueueDomainEvent(new UserCreatedEvent(user.Id));
         return Result<User>.Success(user);
     }
 }
