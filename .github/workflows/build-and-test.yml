@@ -1,0 +1,26 @@
+name: Zbuduj aplikację i uruchom testy jednostkowe
+
+on:
+  push:
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
+
+jobs:
+  build-and-run-tests:
+    name: Buduje aplikację i uruchamia testy jednostkowe
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v3
+    - name: Skonfiguruj .NET Core
+      uses: actions/setup-dotnet@v3
+      with:
+        dotnet-version: 6.0.x
+    - name: Zainstaluj zależności
+      run: dotnet restore
+    - name: Zbuduj aplikację
+      run: dotnet build --no-restore
+    - name: Uruchom testy
+      run: dotnet test --no-build --verbosity normal
