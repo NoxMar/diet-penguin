@@ -24,7 +24,7 @@ public class UserTests
         var result = Domain.User.User.Create(
             DateTime.MaxValue,
             Gender.Female,
-            new MassValue(90.0M, MassUnit.Kilogram),
+            new MassValue(90.0M, Unit.Kilogram),
             height,
             Substitute.For<IDateTimeProvider>(),
             NutritionalNeedsService);
@@ -43,7 +43,7 @@ public class UserTests
         var result = Domain.User.User.Create(
             DateTime.MaxValue,
             Gender.Male,
-            new MassValue(69.96M, MassUnit.Kilogram),
+            new MassValue(69.96M, Unit.Kilogram),
             169M,
             new DateTimeProvider(),
             NutritionalNeedsService
@@ -65,7 +65,7 @@ public class UserTests
         var sut = Domain.User.User.Create(
             currentDate.AddYears(-10),
             Gender.Female,
-            new MassValue(69.96M, MassUnit.Kilogram),
+            new MassValue(69.96M, Unit.Kilogram),
             169M,
             dateTimeSource,
             NutritionalNeedsService
@@ -94,7 +94,7 @@ public class UserTests
         var sut = Domain.User.User.Create(
             new DateTime(currentYear - 10, 11, 9),
             Gender.Female,
-            new MassValue(69.96M, MassUnit.Kilogram),
+            new MassValue(69.96M, Unit.Kilogram),
             169M,
             dateTimeSource,
             NutritionalNeedsService

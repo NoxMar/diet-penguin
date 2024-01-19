@@ -1,6 +1,8 @@
+using DietPenguin.Domain.User;
+
 namespace DietPenguin.Domain.Tests;
 
-public class MassValueTests
+public class ValueWithUnitTests
 {
 
     [Fact]
@@ -8,7 +10,7 @@ public class MassValueTests
     {
         // Arrange
         // ReSharper disable once ObjectCreationAsStatement
-        Action act = () => new MassValue(-2137, MassUnit.Gram);
+        Action act = () => new MassValue(-2137, Unit.Gram);
         
         // Act
         
@@ -21,10 +23,10 @@ public class MassValueTests
     public void ConvertTo_SameUnit_ReturnSameValue()
     {
         // Arrange
-        MassValue sut = new MassValue(1337, MassUnit.Kilogram);
+        MassValue sut = new MassValue(1337, Unit.Kilogram);
         
         // Act
-        var result = sut.ConvertTo(MassUnit.Kilogram);
+        var result = sut.ConvertTo(Unit.Kilogram);
         
         // Assert
         result.Should().BeEquivalentTo(sut);
@@ -41,11 +43,11 @@ public class MassValueTests
     {
         // Arrange
         decimal kilogramsValue = decimal.Parse(kilogramsValueString);
-        var expected = new MassValue(decimal.Parse(expectedGramsString), MassUnit.Gram);
-        var sut = new MassValue(kilogramsValue, MassUnit.Kilogram);
+        var expected = new MassValue(decimal.Parse(expectedGramsString), Unit.Gram);
+        var sut = new MassValue(kilogramsValue, Unit.Kilogram);
         
         // Act
-        var result = sut.ConvertTo(MassUnit.Gram);
+        var result = sut.ConvertTo(Unit.Gram);
         
         // Assert
         result.Should().BeEquivalentTo(expected);
@@ -63,11 +65,11 @@ public class MassValueTests
         // Arrange
         decimal kilogramsValue = decimal.Parse(kilogramsValueStr);
         decimal milligramsValue = decimal.Parse(milligramsValueStr);
-        var sut = new MassValue(kilogramsValue, MassUnit.Kilogram);
-        var expected = new MassValue(milligramsValue, MassUnit.Milligram);
+        var sut = new MassValue(kilogramsValue, Unit.Kilogram);
+        var expected = new MassValue(milligramsValue, Unit.Milligram);
         
         // Act
-        var result = sut.ConvertTo(MassUnit.Milligram);
+        var result = sut.ConvertTo(Unit.Milligram);
 
         // Assert
         result.Should().BeEquivalentTo(expected);
