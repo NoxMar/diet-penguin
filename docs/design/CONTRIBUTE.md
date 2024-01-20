@@ -92,3 +92,5 @@ W ramach tego projektu używany jest [Structurizr](https://structurizr.com/) ([d
 ### Workflowy
 
 - [Wyrenderuj diagramy Struturizr](/.github/workflows/render-structurizr-diagrams.yaml) - Renderuje diagramy, jeżeli ich źródło zostało zmienione **a pliki wyrenderowanych diagramów nie**. Preferowane jest korzystanie z narzędzia [Structurizr Lite](https://structurizr.com/help/lite) ze względu na lepszą czytelność. **UWAGA: Ręcznie wyrenderuj wszystkie zmienione diagramy, jeśli którykolwiek został wyrenderowany ręcznie.** Akcja nie jest w stanie rozróżnić, które diagramy uległy zmianie, a które nie.
+
+- [Zbuduj aplikację i uruchom testy jednostkowe](/.github/workflows/build-and-test.yaml) — Buduje wszystkie projekty i uruchamia przypisane im testy jednostkowe. Podjęto decyzję, by uruchamiać ten workflow tylko dla pull requrestów i pushy do głównej gałęzi z uwagi na to, że w workflow red-green-refactor umieszczanie testów w repozytorium, dla których kod nie został jeszcze napisany.
