@@ -1,3 +1,6 @@
 namespace DietPenguin.Domain.Nutrition;
 
-public abstract record Nutrient(string Name, MassUnit PreferredUnit);
+public record Nutrient(string Name, Unit PreferredUnit)
+{
+    public static readonly Nutrient Energy = new("Energy", Unit.Kcal);
+}
