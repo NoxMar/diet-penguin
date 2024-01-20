@@ -1,3 +1,4 @@
+using System.Collections.ObjectModel;
 using DietPenguin.Core;
 using DietPenguin.Core.Services;
 using DietPenguin.Domain.Nutrition;
@@ -13,8 +14,16 @@ public class User : BaseEntity
     
     public decimal HeightCm { get; private set; }
 
+    private readonly Dictionary<Nutrient, NutritionalNeed> _nutritionalNeeds = new();
+
+    public IReadOnlyDictionary<Nutrient, NutritionalNeed> NutritionalNeeds { get; private init; }
+
+    /* private readonly List<NutritionalNeed> _nutritionalNeeds = new();
+    public IReadOnlyList<NutritionalNeed> NutritionalNeeds { get; } */
+
     private User(DateTime dateOfBrith, Gender gender, MassValue weight, decimal heightCm)
     {
+        NutritionalNeeds = new ReadOnlyDictionary<Nutrient, NutritionalNeed>(_nutritionalNeeds);
         HeightCm = heightCm;
         DateOfBrith = dateOfBrith;
         Gender = gender;
@@ -50,6 +59,13 @@ public class User : BaseEntity
             return Result<User>.Failure(UserErrors.HeightLowerThanOrEquals0);
         }
         var user = new User(dateOfBirth, gender, weight, heightCm);
+
+        var nutritionalNeeds = nutritionalNeedsService.CalculateNutritionalNeeds(user, dateTimeProvider);
+        
+        foreach (var n in nutritionalNeeds)
+        {
+            user._nutritionalNeeds[n.Nutrient] = n;
+        }
         
         user.QueueDomainEvent(new UserCreatedEvent(user.Id));
         return Result<User>.Success(user);

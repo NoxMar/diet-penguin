@@ -44,4 +44,14 @@ public record ValueWithUnit(decimal Value, Unit Unit) : IComparable<ValueWithUni
     {
         return Comparer<ValueWithUnit>.Default.Compare(left, right) >= 0;
     }
+
+    public static ValueWithUnit operator *(ValueWithUnit left, decimal right)
+    {
+        return left with {Value = left.Value * right};
+    }
+
+    public static ValueWithUnit operator *(decimal left, ValueWithUnit right)
+    {
+        return right * left;
+    }
 }
