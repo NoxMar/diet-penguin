@@ -5,6 +5,8 @@ using DietPenguin.Gui;
 using Blazorise;
 using Blazorise.Bootstrap5;
 using Blazorise.Icons.FontAwesome;
+using DietPenguin.Gui.Api;
+using DietPenguin.Gui.User;
 
 var builder = WebAssemblyHostBuilder.CreateDefault(args);
 
@@ -19,6 +21,12 @@ builder.Services
 builder.RootComponents.Add<App>("#app");
 builder.RootComponents.Add<HeadOutlet>("head::after");
 
-builder.Services.AddScoped(sp => new HttpClient { BaseAddress = new Uri(builder.HostEnvironment.BaseAddress) });
+builder.Services.AddHttpClient<IBackendApiClient, BackendApiClient>(httpClient =>
+{
+     httpClient.BaseAddress = new Uri(builder.Configuration["ApiBaseUrl"]
+                                   ?? builder.HostEnvironment.BaseAddress);
+});
+builder.Services.AddScoped<AppState>();
+builder.Services.AddScoped<ICurrentUserService, CurrentUserService>();
 
 await builder.Build().RunAsync();

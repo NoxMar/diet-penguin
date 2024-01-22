@@ -1,5 +1,3 @@
-using System.Net.Mime;
-using System.Reflection;
 using DietPenguin.Application;
 using DietPenguin.Core;
 using DietPenguin.Domain;
@@ -34,8 +32,14 @@ var app = builder.Build();
 // Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())
 {
+    app.UseCors();
     app.UseSwagger();
     app.UseSwaggerUI();
+    app.UseCors(policy =>
+        policy
+            .AllowAnyOrigin()
+            .AllowAnyMethod()
+            .AllowAnyHeader());
 }
 
 app.UseHttpsRedirection();

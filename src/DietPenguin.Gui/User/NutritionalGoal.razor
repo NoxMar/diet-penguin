@@ -1,0 +1,28 @@
+@using System.ComponentModel.DataAnnotations
+@using DietPenguin.WebApi.Contracts
+
+@if (NutritionalNeed != null)
+{
+    <Card>
+        <CardHeader>@NutritionalNeed.Nutrient.Name</CardHeader>
+        <CardBody>
+            <RangeDisplay RecommendedStart="NutritionalNeed.RecommendedRange.Start"
+                          RecommendedEnd="NutritionalNeed.RecommendedRange.End"
+                          CurrentValue="0"></RangeDisplay>
+        </CardBody>
+        <CardFooter>
+            Zalecany zakres to pomiędzy @NutritionalNeed.RecommendedRange.Start a @NutritionalNeed.RecommendedRange.End @NutritionalNeed.RecommendedRange.Unit
+        </CardFooter>
+    </Card>
+}
+else
+{
+    <Loading />
+}
+
+
+@code {
+    [Required]
+    [Parameter]
+    public NutritionalNeedDto? NutritionalNeed { get; set; }
+}

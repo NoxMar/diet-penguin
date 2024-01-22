@@ -105,8 +105,8 @@ public class NutritionalNeedsService : INutritionalNeedsService
             (Gender.Female, _) => 9,
             _ => throw new ArgumentException("User's gender isn't of any declared enum value"),
         } * LegalCupToMlRatio;
-        // No upper bound found
-        return new NutritionalNeed(Nutrient.Water, lowerBoundMl, decimal.MaxValue);
+        // No upper bound found, assuming 20l
+        return new NutritionalNeed(Nutrient.Water, lowerBoundMl, 20_000);
     }
     
     private NutritionalNeed CalculateVitaminC(User.User user, int age)

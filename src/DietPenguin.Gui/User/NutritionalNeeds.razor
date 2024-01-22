@@ -1,0 +1,25 @@
+@using System.ComponentModel.DataAnnotations
+@using DietPenguin.WebApi.Contracts
+
+@if (Needs != null)
+{
+    <Grid>
+        @foreach (var n in Needs)
+        {
+            <Column ColumnSize="ColumnSize.Is4.OnDesktop.Is6.OnMobile">
+                <NutritionalGoal NutritionalNeed="n"/>
+            </Column>
+        }
+        
+    </Grid>
+}
+else
+{
+    <Loading />
+}
+
+@code {
+    [Required]
+    [Parameter]
+    public IEnumerable<NutritionalNeedDto>? Needs { get; set; }
+}
