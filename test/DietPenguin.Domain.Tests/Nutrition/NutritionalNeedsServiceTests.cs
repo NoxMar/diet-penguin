@@ -105,7 +105,7 @@ public class NutritionalNeedsServiceTests
             .BeEquivalentTo(new NutritionalNeed(Nutrient.Iron, 7, 45));
         needs.Should().ContainKey(Nutrient.Water);
         needs[Nutrient.Water].Should()
-            .BeEquivalentTo(new NutritionalNeed(Nutrient.Water, 960, decimal.MaxValue));
+            .BeEquivalentTo(new NutritionalNeed(Nutrient.Water, 960, 20_000M));
     }
 
 }
