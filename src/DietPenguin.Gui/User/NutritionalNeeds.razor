@@ -3,10 +3,10 @@
 
 @if (Needs != null)
 {
-        <Grid Overflow="Overflow.Scroll" Style="max-height: 15vw">
+        <Grid Overflow="Overflow.Scroll" Style="max-height: 25vh">
                 @foreach (var n in Needs)
                 {
-                    <Column ColumnSize="ColumnSize.Is4.OnDesktop.Is6.OnMobile">
+                    <Column ColumnSize="ColumnSize.Is6.OnMobile.Is4.OnDesktop">
                         <NutritionalGoal NutritionalNeed="n"/>
                     </Column>
                 }

@@ -4,14 +4,31 @@
 @if (NutritionalNeed != null)
 {
     <Card>
-        <CardHeader>@NutritionalNeed.Nutrient.Name</CardHeader>
+        <CardHeader TextWeight="TextWeight.Bold">@NutritionalNeed.Nutrient.Name</CardHeader>
         <CardBody>
             <RangeDisplay RecommendedStart="NutritionalNeed.RecommendedRange.Start"
                           RecommendedEnd="NutritionalNeed.RecommendedRange.End"
                           CurrentValue="0"></RangeDisplay>
         </CardBody>
-        <CardFooter>
-            Zalecany zakres to pomiędzy @NutritionalNeed.RecommendedRange.Start a @NutritionalNeed.RecommendedRange.End @NutritionalNeed.RecommendedRange.Unit
+    <CardFooter>
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    Zalecany zakres to
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 fw-bold">
+                    @($"{NutritionalNeed.RecommendedRange.Start:N2}") @NutritionalNeed.RecommendedRange.Unit
+                </div>
+                <div class="col-12 fw-lighter">
+                    a
+                </div>
+                <div class="col-12 fw-bold">
+                    @($"{NutritionalNeed.RecommendedRange.End:N2}") @NutritionalNeed.RecommendedRange.Unit
+                </div>
+            </div>
+        </div>
         </CardFooter>
     </Card>
 }
