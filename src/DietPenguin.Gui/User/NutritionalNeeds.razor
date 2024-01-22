@@ -3,15 +3,14 @@
 
 @if (Needs != null)
 {
-    <Grid>
-        @foreach (var n in Needs)
-        {
-            <Column ColumnSize="ColumnSize.Is4.OnDesktop.Is6.OnMobile">
-                <NutritionalGoal NutritionalNeed="n"/>
-            </Column>
-        }
-        
-    </Grid>
+        <Grid Overflow="Overflow.Scroll" Style="max-height: 15vw">
+                @foreach (var n in Needs)
+                {
+                    <Column ColumnSize="ColumnSize.Is4.OnDesktop.Is6.OnMobile">
+                        <NutritionalGoal NutritionalNeed="n"/>
+                    </Column>
+                }
+        </Grid>
 }
 else
 {
