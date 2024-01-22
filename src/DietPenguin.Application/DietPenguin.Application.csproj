@@ -8,6 +8,7 @@
 
     <ItemGroup>
       <ProjectReference Include="..\DietPenguin.Domain\DietPenguin.Domain.csproj" />
+      <ProjectReference Include="..\DietPenguin.WebApi.Contracts\DietPenguin.WebApi.Contracts.csproj" />
     </ItemGroup>
 
 </Project>

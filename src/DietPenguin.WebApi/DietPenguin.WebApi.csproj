@@ -12,6 +12,7 @@
 
     <ItemGroup>
       <ProjectReference Include="..\DietPenguin.Application\DietPenguin.Application.csproj" />
+      <ProjectReference Include="..\DietPenguin.Infrastructure\DietPenguin.Infrastructure.csproj" />
       <ProjectReference Include="..\DietPenguin.WebApi.Contracts\DietPenguin.WebApi.Contracts.csproj" />
     </ItemGroup>
 

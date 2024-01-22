@@ -1,0 +1,1 @@
+global using DietPenguin.WebApi.Contracts.User;

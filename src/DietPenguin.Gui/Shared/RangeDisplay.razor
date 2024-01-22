@@ -1,0 +1,50 @@
+@using System.ComponentModel.DataAnnotations
+
+
+<Progress ShowValue="false">
+    <ProgressBar Color="CurrentColor" Value="MapValue(CurrentValue)" />
+    @if (CurrentValue < RecommendedStart)
+    {
+        <ProgressBar Style="opacity: 0.25;" Color="Color.Secondary" Value="MapValue(RecommendedStart - CurrentValue)" />
+    }
+    @if (CurrentValue < RecommendedEnd)
+    {
+        <ProgressBar Style="opacity: 0.5;" Color="Color.Success" Value="MapValue(RecommendedEnd - Math.Max(CurrentValue, RecommendedStart))" />
+    }
+    <ProgressBar Style="opacity: 0.5;" Color="Color.Danger" Value="MapValue(TotalMaxValue - Math.Max(CurrentValue, RecommendedEnd))"/>
+</Progress>
+
+@code {
+    [Parameter] [Required] public decimal RecommendedStart { get; set; }
+
+    [Parameter] [Required] public decimal RecommendedEnd { get; set; }
+
+    [Parameter] [Required] public decimal CurrentValue { get; set; }
+
+    private decimal TotalMaxValue => Math.Max(RecommendedEnd, CurrentValue) * 1.1M;
+
+    private decimal TotalRatioDenominator => TotalMaxValue / 100M;
+
+    private int MapValue(decimal originalValue)
+    {
+        return (int)(originalValue / TotalRatioDenominator);
+    }
+
+    private Color CurrentColor
+    {
+        get
+        {
+            if (CurrentValue < RecommendedStart)
+            {
+                return Color.Secondary;
+            }
+
+            if (CurrentValue <= RecommendedEnd)
+            {
+                return Color.Success;
+            }
+
+            return Color.Danger;
+        }
+    }
+}
